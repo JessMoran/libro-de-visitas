@@ -1,19 +1,12 @@
-var comments = [];
-
+//variables globales para traer a los elementos del htML
 var textContainer = document.getElementById('text-container');
-var commentContainer = document.getElementById('comment-container');
+var comment = document.getElementById('comment');
 
-
+//Se asigna un evento y una función
 textContainer.addEventListener("keyup", getText);
 
-
-
+//funcion que pinta el texto que pone el usuario
 function getText (){
   var textValue = textContainer.value;
-
-  var textObj ={
-    'text': textValue
-  }
- comments.push(textObj);
- console.log(textObj,comments);
+  comment.innerText = textValue;
 }
