@@ -19,7 +19,7 @@ var commentsData = [
 var commentsContainer = document.getElementById("comments-container");
 var sendBtn = document.getElementById("send-btn");
 sendBtn.addEventListener("click", addComment);
-//var newCommentsContainer = document.getElementById("comments-container");
+
 
 function drawComments (){
   commentsContainer.innerHTML = " ";
