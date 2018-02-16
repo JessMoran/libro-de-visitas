@@ -43,11 +43,13 @@ function changeSizeSmall (){
 }
 
 function textColor (){
-  prompt("Ingresa el número hexadecimal que desees")
+  var color = prompt("Ingresa el número hexadecimal que desees");
+  comment.style.color = color;
 }
 
 function backgroundColor (){
-  prompt("Ingresa el número hexadecimal que desees")
+  var background = prompt("Ingresa el número hexadecimal que desees");
+  comment.style.backgroundColor = background;
 }
 
 function changeAlignRight (){
