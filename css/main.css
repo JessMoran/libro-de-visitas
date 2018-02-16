@@ -4,11 +4,7 @@ body{
 
 #new-comment-container{
   border: 1px solid #000;
-  height: 10vh;
+  height: 40vh;
   margin-left: 30%;
   width: 40%;
-}
-
-.large{
-  font-size: 40px;
 }
