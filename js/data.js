@@ -6,7 +6,7 @@ var commentsData = [
     background :"black"
   }
 },
-{
+  {
   content: "bye",
   style :{
     color :"white",
@@ -17,6 +17,9 @@ var commentsData = [
 ];
 
 var commentsContainer = document.getElementById("comments-container");
+var sendBtn = document.getElementById("send-btn");
+sendBtn.addEventListener("click", addComment);
+//var newCommentsContainer = document.getElementById("comments-container");
 
 function drawComments (){
   commentsContainer.innerHTML = " ";
@@ -30,19 +33,14 @@ function createDomCommentFromData (data){
   var commentContent = data.content;
   var commentDom = document.createElement("section");
   commentDom.innerHTML = commentContent;
-
   Object.assign(commentDom.style,data.style)
   return commentDom;
-    }
+  }
 
  drawComments ();
 
-var sendBtn = document.getElementById("send-btn");
-
-sendBtn.addEventListener("click", addComment);
-
 function addComment (){
-  var commentPreview = document.getElementById("comments-container");
+  var commentPreview = document.getElementById("new-comment-container");
   var newCommentText = commentPreview.innerHTML;
   var newComment = { content :null, style :{} };
   newComment.content = newCommentText;
